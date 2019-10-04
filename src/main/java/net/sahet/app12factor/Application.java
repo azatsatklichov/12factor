@@ -1,4 +1,4 @@
-package net.sahet.app12factor.factor;
+package net.sahet.app12factor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
