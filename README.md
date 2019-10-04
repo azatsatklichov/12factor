@@ -1,2 +1,2 @@
 # 12factor
-12 factor via Spring Boot
+[Twelve-Factor Methodology]( https://www.baeldung.com/spring-boot-12-factor) in a Spring Boot Microservice 
