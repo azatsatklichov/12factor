@@ -1,4 +1,4 @@
-package net.sahet.app12factor.repoitory;
+package net.sahet.app12factor.repository;
 
 import net.sahet.app12factor.domain.Movie;
 import org.springframework.data.repository.CrudRepository;

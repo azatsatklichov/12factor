@@ -1,0 +1,31 @@
+### Send POST request with json body
+POST http://localhost:8888/api/rate
+Content-Type: application/json
+Acept: application/json
+
+{
+
+  "product": "Nike"
+}
+
+<> 2019-05-31T123631.200.json
+<> 2019-05-31T105626.200.json
+<> 2019-05-31T105559.200.json
+<> 2019-05-30T084622.200.json
+
+### Send POST request with json body
+POST http://localhost:8888/api/rate
+Content-Type: application/json
+Acept: application/json
+
+{
+  "amount": 5,
+  "product": "Adidas"
+}
+
+<> 2019-05-31T123631.200.json
+<> 2019-05-31T105626.200.json
+<> 2019-05-31T105559.200.json
+<> 2019-05-30T084622.200.json
+
+###

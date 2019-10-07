@@ -1,7 +1,7 @@
 package net.sahet.app12factor.web.rest;
 
 import net.sahet.app12factor.domain.Movie;
-import net.sahet.app12factor.repoitory.MovieRepository;
+import net.sahet.app12factor.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
