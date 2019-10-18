@@ -14,7 +14,7 @@
     -->
 
     <changeSet id="1" author="Azat">
-        <createTable tableName="user">
+        <createTable tableName="movie">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}" >
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -41,7 +41,7 @@
         <ext:loadData encoding="UTF-8"
                       file="config/liquibase/movies.csv"
                       separator=";"
-                      tableName="user"
+                      tableName="movie"
                       identityInsertEnabled="true"/>
     </changeSet>
 

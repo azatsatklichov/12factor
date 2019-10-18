@@ -1,3 +1,4 @@
+/*
 package net.sahet.app12factor.config;
 
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
@@ -41,7 +42,7 @@ public class DatabaseConfiguration {
                                      LiquibaseProperties liquibaseProperties) {
         String path;
         path = Arrays.stream(env.getActiveProfiles()).anyMatch(e -> e.equalsIgnoreCase("MM")) ?
-            "classpath:config/liquibase/mm.xml" : "classpath:config/liquibase/master.xml";
+            "classpath:config/liquibase/mm.xml" : "classpath:config/liquibase/changelog/master.xml";
 
         return liquibaseBuilder(path, dataSource, liquibaseProperties);
     }
@@ -74,3 +75,4 @@ public class DatabaseConfiguration {
         return () -> Optional.of(OffsetDateTime.now());
     }
 }
+*/

@@ -25,6 +25,9 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
+        <!--<rollback>
+            <dropTable tableName="user"/>
+        </rollback>-->
     </changeSet>
 
     <changeSet id="2" author="Azat">

@@ -1,3 +1,4 @@
+/*
 package net.sahet.app12factor.config.liquibase;
 
 import liquibase.exception.LiquibaseException;
@@ -11,6 +12,7 @@ import org.springframework.util.StopWatch;
 
 import javax.inject.Inject;
 
+*/
 /**
  * <p>
  * By liquibase.integration.spring.SpringLiquibase  database update is asynchronously.
@@ -18,7 +20,8 @@ import javax.inject.Inject;
  * <p>
  * - This is needed if you want to do some database requests at startup
  * -  This ensure that the database is ready when the application starts
- */
+ *//*
+
 public class AsyncSpringLiquibase extends SpringLiquibase {
 
     private final Logger logger = LoggerFactory.getLogger(AsyncSpringLiquibase.class);
@@ -54,3 +57,4 @@ public class AsyncSpringLiquibase extends SpringLiquibase {
         super.afterPropertiesSet();
     }
 }
+*/
