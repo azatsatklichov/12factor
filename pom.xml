@@ -20,6 +20,11 @@
 		<swagger.version>2.9.2</swagger.version>
 		<bootstrap.version>4.2.1</bootstrap.version>
 		<flying.saucer.version>9.1.6</flying.saucer.version>
+		<liquibase.version>3.6.3</liquibase.version>
+		<javassist.version>3.22.0-GA</javassist.version>
+		<liquibase-hibernate5.version>3.6</liquibase-hibernate5.version>
+		<validation-api.version>1.1.0.Final</validation-api.version>
+		<jackson.version>2.9.5</jackson.version>
 	</properties>
 
 	<dependencies>
@@ -57,17 +62,6 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>${swagger.version}</version>
-		</dependency>
-
-		<!-- Hikary CP, jpa, crud repository -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
 		</dependency>
 
 		<!-- send email -->
@@ -127,6 +121,46 @@
 			<version>3.1.12</version>
 		</dependency>
 
+		<!-- Hikary CP, jpa, crud repository -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>${liquibase.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-hibernate5</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.liquibase.ext</groupId>
+			<artifactId>liquibase-hibernate5</artifactId>
+			<version>${liquibase-hibernate5.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -134,6 +168,46 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
+				<version>${liquibase.version}</version>
+				<configuration>
+					<changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
+					<diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
+					<driver />
+					<url />
+					<defaultSchemaName />
+					<username />
+					<password />
+					<referenceUrl>hibernate:spring:net.sahet.app12factor.domain?dialect=</referenceUrl>
+					<verbose>true</verbose>
+					<logging>debug</logging>
+					<propertyFile>src/main/resources/application.properties</propertyFile>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.javassist</groupId>
+						<artifactId>javassist</artifactId>
+						<version>${javassist.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.liquibase.ext</groupId>
+						<artifactId>liquibase-hibernate5</artifactId>
+						<version>${liquibase-hibernate5.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-data-jpa</artifactId>
+						<version>${project.parent.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>javax.validation</groupId>
+						<artifactId>validation-api</artifactId>
+						<version>${validation-api.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
