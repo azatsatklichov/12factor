@@ -1,232 +1,185 @@
-2019-10-18 22:45:33,939 INFO net.sahet.app12factor.Application [restartedMain] Starting Application on ASATKLICH-PRG-D with PID 15640 (C:\workspace\12factor\target\classes started by ASatklichov in C:\workspace\12factor)
-2019-10-18 22:45:33,941 INFO net.sahet.app12factor.Application [restartedMain] No active profile set, falling back to default profiles: default
-2019-10-18 22:45:33,985 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-18 22:45:33,986 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-18 22:45:35,250 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-18 22:45:35,251 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-18 22:45:35,436 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 178ms. Found 3 repository interfaces.
-2019-10-18 22:45:35,452 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-18 22:45:35,453 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-18 22:45:35,473 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.BookRepository.
-2019-10-18 22:45:35,474 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.JpaServicesRepository.
-2019-10-18 22:45:35,474 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.MovieRepository.
-2019-10-18 22:45:35,474 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-2019-10-18 22:45:35,965 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b68cc709] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-18 22:45:36,474 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8888 (http)
-2019-10-18 22:45:36,765 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@62a6a657
-2019-10-18 22:45:36,802 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] HikariPoolZZZ - configuration:
-2019-10-18 22:45:36,804 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] allowPoolSuspension.............false
-2019-10-18 22:45:36,805 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] autoCommit......................true
-2019-10-18 22:45:36,805 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] catalog.........................none
-2019-10-18 22:45:36,805 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionInitSql...............none
-2019-10-18 22:45:36,805 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTestQuery.............none
-2019-10-18 22:45:36,806 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTimeout...............20000
-2019-10-18 22:45:36,806 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSource......................none
-2019-10-18 22:45:36,806 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceClassName.............none
-2019-10-18 22:45:36,806 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceJNDI..................none
-2019-10-18 22:45:36,807 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceProperties............{password=<masked>}
-2019-10-18 22:45:36,807 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] driverClassName................."org.postgresql.Driver"
-2019-10-18 22:45:36,807 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckProperties...........{}
-2019-10-18 22:45:36,807 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckRegistry.............none
-2019-10-18 22:45:36,807 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] idleTimeout.....................600000
-2019-10-18 22:45:36,807 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] initializationFailTimeout.......1
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] isolateInternalQueries..........false
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] jdbcUrl.........................jdbc:postgresql://localhost:5432/12factor
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] leakDetectionThreshold..........0
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maxLifetime.....................1800000
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maximumPoolSize.................5
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricRegistry..................none
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricsTrackerFactory...........none
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] minimumIdle.....................5
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] password........................<masked>
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] poolName........................"HikariPoolZZZ"
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] readOnly........................false
-2019-10-18 22:45:36,808 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] registerMbeans..................false
-2019-10-18 22:45:36,813 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] scheduledExecutor...............none
-2019-10-18 22:45:36,813 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] schema..........................none
-2019-10-18 22:45:36,813 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] threadFactory...................internal
-2019-10-18 22:45:36,813 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] transactionIsolation............default
-2019-10-18 22:45:36,813 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] username........................"postgres"
-2019-10-18 22:45:36,814 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] validationTimeout...............5000
-2019-10-18 22:45:36,814 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Starting...
-2019-10-18 22:45:36,943 DEBUG com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@6c93d98d
-2019-10-18 22:45:36,944 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Start completed.
-2019-10-18 22:45:37,045 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=1, active=1, idle=0, waiting=0)
-2019-10-18 22:45:37,079 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@697a81c7
-2019-10-18 22:45:37,125 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@67bd6298
-2019-10-18 22:45:37,160 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@6382eab7
-2019-10-18 22:45:37,194 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@268068a3
-2019-10-18 22:45:37,194 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - After adding stats (total=5, active=1, idle=4, waiting=0)
-2019-10-18 22:45:37,639 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
-2019-10-18 22:45:37,641 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
-2019-10-18 22:45:37,643 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-10-18 22:45:37,658 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully acquired change log lock
-2019-10-18 22:45:38,822 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-10-18 22:45:38,823 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
-2019-10-18 22:45:38,824 INFO liquibase.changelog.StandardChangeLogHistoryService [restartedMain] Reading from public.databasechangelog
-2019-10-18 22:45:38,824 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-10-18 22:45:38,842 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully released change log lock
-2019-10-18 22:45:39,939 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-18 22:45:40,558 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-18 22:45:40,917 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-18 22:45:40,955 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2019-10-18 22:45:41,770 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8888 (http) with context path ''
-2019-10-18 22:45:41,772 INFO net.sahet.app12factor.Application [restartedMain] Started Application in 9.667 seconds (JVM running for 10.771)
-2019-10-18 22:45:41,774 INFO net.sahet.app12factor.Application [restartedMain] StartApplication...
-2019-10-18 22:46:13,154 INFO net.sahet.app12factor.Application [restartedMain] Starting Application on ASATKLICH-PRG-D with PID 21228 (C:\workspace\12factor\target\classes started by ASatklichov in C:\workspace\12factor)
-2019-10-18 22:46:13,156 INFO net.sahet.app12factor.Application [restartedMain] No active profile set, falling back to default profiles: default
-2019-10-18 22:46:13,195 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-18 22:46:13,195 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-18 22:46:14,245 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-18 22:46:14,247 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-18 22:46:14,319 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 65ms. Found 3 repository interfaces.
-2019-10-18 22:46:14,327 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-18 22:46:14,328 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-18 22:46:14,340 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.BookRepository.
-2019-10-18 22:46:14,340 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.JpaServicesRepository.
-2019-10-18 22:46:14,340 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.MovieRepository.
-2019-10-18 22:46:14,340 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
-2019-10-18 22:46:14,788 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7b54966] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-18 22:46:15,181 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8888 (http)
-2019-10-18 22:46:15,449 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@171d0c8
-2019-10-18 22:46:15,487 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] HikariPoolZZZ - configuration:
-2019-10-18 22:46:15,489 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] allowPoolSuspension.............false
-2019-10-18 22:46:15,490 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] autoCommit......................true
-2019-10-18 22:46:15,490 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] catalog.........................none
-2019-10-18 22:46:15,490 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionInitSql...............none
-2019-10-18 22:46:15,490 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTestQuery.............none
-2019-10-18 22:46:15,490 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTimeout...............20000
-2019-10-18 22:46:15,490 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSource......................none
-2019-10-18 22:46:15,491 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceClassName.............none
-2019-10-18 22:46:15,491 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceJNDI..................none
-2019-10-18 22:46:15,491 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceProperties............{password=<masked>}
-2019-10-18 22:46:15,491 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] driverClassName................."org.postgresql.Driver"
-2019-10-18 22:46:15,491 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckProperties...........{}
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckRegistry.............none
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] idleTimeout.....................600000
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] initializationFailTimeout.......1
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] isolateInternalQueries..........false
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] jdbcUrl.........................jdbc:postgresql://localhost:5432/12factor
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] leakDetectionThreshold..........0
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maxLifetime.....................1800000
-2019-10-18 22:46:15,492 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maximumPoolSize.................5
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricRegistry..................none
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricsTrackerFactory...........none
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] minimumIdle.....................5
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] password........................<masked>
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] poolName........................"HikariPoolZZZ"
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] readOnly........................false
-2019-10-18 22:46:15,493 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] registerMbeans..................false
-2019-10-18 22:46:15,498 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] scheduledExecutor...............none
-2019-10-18 22:46:15,498 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] schema..........................none
-2019-10-18 22:46:15,499 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] threadFactory...................internal
-2019-10-18 22:46:15,499 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] transactionIsolation............default
-2019-10-18 22:46:15,499 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] username........................"postgres"
-2019-10-18 22:46:15,499 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] validationTimeout...............5000
-2019-10-18 22:46:15,499 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Starting...
-2019-10-18 22:46:15,618 DEBUG com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@46a2b835
-2019-10-18 22:46:15,620 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Start completed.
-2019-10-18 22:46:15,722 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=1, active=1, idle=0, waiting=0)
-2019-10-18 22:46:15,878 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@a7a8848
-2019-10-18 22:46:15,928 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@4bd7777
-2019-10-18 22:46:15,966 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@82e338
-2019-10-18 22:46:15,998 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@45807d4c
-2019-10-18 22:46:15,998 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - After adding stats (total=5, active=1, idle=4, waiting=0)
-2019-10-18 22:46:16,401 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
-2019-10-18 22:46:16,403 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
-2019-10-18 22:46:16,405 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-10-18 22:46:16,441 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully acquired change log lock
-2019-10-18 22:46:17,414 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-10-18 22:46:17,415 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
-2019-10-18 22:46:17,416 INFO liquibase.changelog.StandardChangeLogHistoryService [restartedMain] Reading from public.databasechangelog
-2019-10-18 22:46:17,416 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-10-18 22:46:17,435 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully released change log lock
-2019-10-18 22:46:18,581 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-18 22:46:19,179 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-18 22:46:19,470 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-18 22:46:19,493 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2019-10-18 22:46:20,279 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8888 (http) with context path ''
-2019-10-18 22:46:20,282 INFO net.sahet.app12factor.Application [restartedMain] Started Application in 8.17 seconds (JVM running for 8.654)
-2019-10-18 22:46:20,285 INFO net.sahet.app12factor.Application [restartedMain] StartApplication...
-2019-10-18 22:46:45,725 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
-2019-10-18 22:47:15,726 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
-2019-10-18 22:47:45,727 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
-2019-10-18 22:55:13,654 INFO net.sahet.app12factor.Application [restartedMain] Starting Application on ASATKLICH-PRG-D with PID 22236 (C:\workspace\12factor\target\classes started by ASatklichov in C:\workspace\12factor)
-2019-10-18 22:55:13,655 INFO net.sahet.app12factor.Application [restartedMain] No active profile set, falling back to default profiles: default
-2019-10-18 22:55:13,699 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-18 22:55:13,699 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-18 22:55:14,721 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-18 22:55:14,723 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-18 22:55:14,792 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 61ms. Found 3 repository interfaces.
-2019-10-18 22:55:14,799 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-10-18 22:55:14,799 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-18 22:55:14,813 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.BookRepository.
-2019-10-18 22:55:14,813 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.JpaServicesRepository.
-2019-10-18 22:55:14,813 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.MovieRepository.
-2019-10-18 22:55:14,813 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-10-18 22:55:15,240 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$219a8059] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-18 22:55:15,651 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8888 (http)
-2019-10-18 22:55:15,927 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@271a40a
-2019-10-18 22:55:15,960 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] HikariPoolZZZ - configuration:
-2019-10-18 22:55:15,961 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] allowPoolSuspension.............false
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] autoCommit......................true
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] catalog.........................none
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionInitSql...............none
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTestQuery.............none
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTimeout...............20000
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSource......................none
-2019-10-18 22:55:15,962 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceClassName.............none
-2019-10-18 22:55:15,963 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceJNDI..................none
-2019-10-18 22:55:15,963 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceProperties............{password=<masked>}
-2019-10-18 22:55:15,963 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] driverClassName................."org.postgresql.Driver"
-2019-10-18 22:55:15,963 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckProperties...........{}
-2019-10-18 22:55:15,963 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckRegistry.............none
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] idleTimeout.....................600000
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] initializationFailTimeout.......1
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] isolateInternalQueries..........false
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] jdbcUrl.........................jdbc:postgresql://localhost:5432/12factor
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] leakDetectionThreshold..........0
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maxLifetime.....................1800000
-2019-10-18 22:55:15,964 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maximumPoolSize.................5
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricRegistry..................none
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricsTrackerFactory...........none
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] minimumIdle.....................5
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] password........................<masked>
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] poolName........................"HikariPoolZZZ"
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] readOnly........................false
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] registerMbeans..................false
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] scheduledExecutor...............none
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] schema..........................none
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] threadFactory...................internal
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] transactionIsolation............default
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] username........................"postgres"
-2019-10-18 22:55:15,965 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] validationTimeout...............5000
-2019-10-18 22:55:15,965 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Starting...
-2019-10-18 22:55:16,076 DEBUG com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@397b7727
-2019-10-18 22:55:16,078 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Start completed.
-2019-10-18 22:55:16,179 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=1, active=1, idle=0, waiting=0)
-2019-10-18 22:55:16,219 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@6d06368f
-2019-10-18 22:55:16,266 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@63c1d55f
-2019-10-18 22:55:16,317 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@67fe5dff
-2019-10-18 22:55:16,355 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@22fcdf64
-2019-10-18 22:55:16,356 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - After adding stats (total=5, active=1, idle=4, waiting=0)
-2019-10-18 22:55:16,762 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
-2019-10-18 22:55:16,764 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
-2019-10-18 22:55:16,766 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2019-10-18 22:55:16,780 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully acquired change log lock
-2019-10-18 22:55:17,864 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
-2019-10-18 22:55:17,866 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
-2019-10-18 22:55:17,867 INFO liquibase.changelog.StandardChangeLogHistoryService [restartedMain] Reading from public.databasechangelog
-2019-10-18 22:55:17,868 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2019-10-18 22:55:17,890 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully released change log lock
-2019-10-18 22:55:19,162 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-18 22:55:19,741 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-18 22:55:20,043 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-18 22:55:20,069 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2019-10-18 22:55:20,803 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8888 (http) with context path ''
-2019-10-18 22:55:20,805 INFO net.sahet.app12factor.Application [restartedMain] Started Application in 8.301 seconds (JVM running for 8.801)
-2019-10-18 22:55:20,807 INFO net.sahet.app12factor.Application [restartedMain] StartApplication...
-2019-10-18 22:55:46,182 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
-2019-10-18 22:56:16,185 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
-2019-10-18 22:56:46,188 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
-2019-10-18 22:57:16,189 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=5, active=0, idle=5, waiting=0)
+2019-10-21 10:13:23,067 INFO net.sahet.app12factor.Application [restartedMain] Starting Application on ASATKLICH-PRG-D with PID 23044 (C:\workspace\12factor\target\classes started by ASatklichov in C:\workspace\12factor)
+2019-10-21 10:13:23,072 INFO net.sahet.app12factor.Application [restartedMain] No active profile set, falling back to default profiles: default
+2019-10-21 10:13:23,122 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 10:13:23,122 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 10:13:24,129 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 10:13:24,131 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 10:13:24,214 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 76ms. Found 5 repository interfaces.
+2019-10-21 10:13:24,220 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 10:13:24,221 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 10:13:24,242 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.AnswerRepository.
+2019-10-21 10:13:24,242 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.BookRepository.
+2019-10-21 10:13:24,242 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.JpaServicesRepository.
+2019-10-21 10:13:24,243 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.MovieRepository.
+2019-10-21 10:13:24,243 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Solr - Could not safely identify store assignment for repository candidate interface net.sahet.app12factor.repository.QuestionRepository.
+2019-10-21 10:13:24,243 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-10-21 10:13:24,661 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2f66c907] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 10:13:25,051 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8888 (http)
+2019-10-21 10:13:25,320 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@68eb3b48
+2019-10-21 10:13:25,359 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] HikariPoolZZZ - configuration:
+2019-10-21 10:13:25,361 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] allowPoolSuspension.............false
+2019-10-21 10:13:25,361 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] autoCommit......................true
+2019-10-21 10:13:25,361 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] catalog.........................none
+2019-10-21 10:13:25,361 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionInitSql...............none
+2019-10-21 10:13:25,361 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTestQuery.............none
+2019-10-21 10:13:25,361 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] connectionTimeout...............20000
+2019-10-21 10:13:25,362 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSource......................none
+2019-10-21 10:13:25,362 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceClassName.............none
+2019-10-21 10:13:25,362 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceJNDI..................none
+2019-10-21 10:13:25,362 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] dataSourceProperties............{password=<masked>}
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] driverClassName................."org.postgresql.Driver"
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckProperties...........{}
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] healthCheckRegistry.............none
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] idleTimeout.....................600000
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] initializationFailTimeout.......1
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] isolateInternalQueries..........false
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] jdbcUrl.........................jdbc:postgresql://localhost:5432/12factor
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] leakDetectionThreshold..........0
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maxLifetime.....................1800000
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] maximumPoolSize.................5
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricRegistry..................none
+2019-10-21 10:13:25,363 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] metricsTrackerFactory...........none
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] minimumIdle.....................5
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] password........................<masked>
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] poolName........................"HikariPoolZZZ"
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] readOnly........................false
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] registerMbeans..................false
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] scheduledExecutor...............none
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] schema..........................none
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] threadFactory...................internal
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] transactionIsolation............default
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] username........................"postgres"
+2019-10-21 10:13:25,364 DEBUG com.zaxxer.hikari.HikariConfig [restartedMain] validationTimeout...............5000
+2019-10-21 10:13:25,364 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Starting...
+2019-10-21 10:13:25,495 DEBUG com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@4f3ae181
+2019-10-21 10:13:25,496 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPoolZZZ - Start completed.
+2019-10-21 10:13:25,597 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ housekeeper] HikariPoolZZZ - Pool stats (total=1, active=1, idle=0, waiting=0)
+2019-10-21 10:13:25,631 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@7acc129e
+2019-10-21 10:13:25,665 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@740be3b7
+2019-10-21 10:13:25,701 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@703479ee
+2019-10-21 10:13:25,734 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - Added connection org.postgresql.jdbc.PgConnection@3536e98c
+2019-10-21 10:13:25,735 DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPoolZZZ connection adder] HikariPoolZZZ - After adding stats (total=5, active=1, idle=4, waiting=0)
+2019-10-21 10:13:26,188 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-10-21 10:13:26,188 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-10-21 10:13:26,190 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-10-21 10:13:26,203 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully acquired change log lock
+2019-10-21 10:13:27,155 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-10-21 10:13:27,156 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-10-21 10:13:27,157 INFO liquibase.changelog.StandardChangeLogHistoryService [restartedMain] Reading from public.databasechangelog
+2019-10-21 10:13:27,157 INFO liquibase.executor.jvm.JdbcExecutor [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-10-21 10:13:27,175 INFO liquibase.lockservice.StandardLockService [restartedMain] Successfully released change log lock
+2019-10-21 10:13:28,681 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-21 10:13:28,709 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-10-21 10:13:29,731 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-21 10:13:30,056 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:13:31,208 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-21 10:13:31,212 INFO net.sahet.app12factor.Application [restartedMain] Started Application in 9.173 seconds (JVM running for 9.683)
+2019-10-21 10:13:31,214 INFO net.sahet.app12factor.Application [restartedMain] StartApplication...
+2019-10-21 10:13:31,594 ERROR org.thymeleaf.TemplateEngine [http-nio-8888-exec-1] [THYMELEAF][http-nio-8888-exec-1] Exception processing template "getBook": Error resolving template [getBook], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [getBook], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1372)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+2019-10-21 10:13:31,597 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8888-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [getBook], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [getBook], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1372)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)

@@ -29,3 +29,23 @@ Acept: application/json
 <> 2019-05-30T084622.200.json
 
 ###
+POST http://localhost:8888/questions
+Content-Type: application/json
+Acept: application/json
+
+{
+	"title":"How To use Postgres with Spring Boot",
+	"description": "Need to know more details"
+}
+
+###
+#http://localhost:8888/questions/{questionId}/answers
+POST http://localhost:8888/questions/1000/answers
+Content-Type: application/json
+Acept: application/json
+
+{
+  "text":"For using Postgres with Spring Boot use https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/"
+}
+
+###

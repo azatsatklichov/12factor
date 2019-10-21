@@ -26,5 +26,10 @@ GET http://localhost:8888/hello
 GET http://localhost:8888/mail
 
 ###
+GET http://localhost:8888/questions?page=0&size=2&sort=createdAt,desc
 
+###
+GET http://localhost:8888/questions/1000/answers
+
+###
 

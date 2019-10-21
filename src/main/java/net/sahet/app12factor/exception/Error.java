@@ -1,4 +1,4 @@
-package net.sahet.app12factor.web.errors;
+package net.sahet.app12factor.exception;
 
 public class Error {
 	private int code;

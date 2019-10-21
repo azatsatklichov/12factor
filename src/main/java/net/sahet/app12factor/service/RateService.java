@@ -5,8 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 import net.sahet.app12factor.web.dto.Product;
 import net.sahet.app12factor.web.dto.RateRequest;
 import net.sahet.app12factor.web.dto.RateResponse;
-import net.sahet.app12factor.web.errors.RateNotFoundException;
-import net.sahet.app12factor.web.errors.RequestValidationException;
+import net.sahet.app12factor.exception.RateNotFoundException;
+import net.sahet.app12factor.exception.RequestValidationException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
