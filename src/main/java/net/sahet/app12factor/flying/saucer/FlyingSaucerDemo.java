@@ -26,7 +26,7 @@ public class FlyingSaucerDemo {
 
         String htmlText = templateEngine.process("template", context);
 
-        try (OutputStream outputStream = new FileOutputStream("report.pdf")) {
+        try (OutputStream outputStream = new FileOutputStream("report2.pdf")) {
             ITextRenderer renderer = new ITextRenderer();
             renderer.setDocumentFromString(htmlText);
             renderer.layout();
