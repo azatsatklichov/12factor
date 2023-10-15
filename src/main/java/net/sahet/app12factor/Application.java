@@ -31,7 +31,7 @@ public class Application implements CommandLineRunner {
 
         log.info("StartApplication...");
 
-        /*repository.save(new Book("Java"));
+        repository.save(new Book("Java"));
         repository.save(new Book("Angular"));
         repository.save(new Book("Scala"));//Python
 
@@ -42,7 +42,7 @@ public class Application implements CommandLineRunner {
         repository.findById(1l).ifPresent(x -> System.out.println(x));
 
         System.out.println("\nfindByName('Node')");
-        repository.findByName("Node").forEach(x -> System.out.println(x));*/
+        repository.findByName("Node").forEach(x -> System.out.println(x));
 
     }
 }

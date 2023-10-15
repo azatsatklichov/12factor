@@ -32,7 +32,7 @@ TODO BE
  
 TODO FE
 -----
-Angular/TS client 
+TS client 
 Node.js 
 Mongo DB 
 

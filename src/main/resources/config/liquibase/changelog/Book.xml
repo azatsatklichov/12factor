@@ -36,5 +36,18 @@
                       tableName="book"
                       identityInsertEnabled="true"/>
     </changeSet>
+    
+      <changeSet id="3" author="Azat">
+        <!--<validCheckSum>any</validCheckSum>
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">select count(*) from user</sqlCheck>
+        </preConditions>-->
+
+        <ext:loadData encoding="UTF-8"
+                      file="config/liquibase/books2.csv"
+                      separator=";"
+                      tableName="book"
+                      identityInsertEnabled="true"/>
+    </changeSet>
 
 </databaseChangeLog>
