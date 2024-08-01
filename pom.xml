@@ -18,7 +18,7 @@
 		<java.version>11</java.version>
 		<lombok.version>1.18.2</lombok.version>
 		<swagger.version>2.9.2</swagger.version>
-		<bootstrap.version>4.2.1</bootstrap.version>
+		<bootstrap.version>4.3.1</bootstrap.version>
 		<flying.saucer.version>9.1.6</flying.saucer.version>
 		<liquibase.version>3.6.3</liquibase.version>
 		<javassist.version>3.22.0-GA</javassist.version>
